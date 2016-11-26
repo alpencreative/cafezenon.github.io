@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:500');
+@import url('https://fonts.googleapis.com/css?family=Ek+Mukta:200');
+
+* {
+
+}
+
+body {
+	font-size: 15px;
+}
+
+header {
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: white;
+}
+
+label {
+	display: none;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.7em;
+	vertical-align: middle;
+	z-index: 999;
+}  
+
+nav {
+	text-align: center;
+}
+
+section {
+	margin-top: 3.5%;
+}
+
+footer {
+
+}
+
+span {
+	float: right;
+}
+
+a {
+
+}
+
+h1 {
+	text-align: center;
+	font-family: 'Yantramanav', sans-serif;
+	font-size: 5em;
+}
+
+h2 {
+	text-align: center;
+	font-family: 'Yantramanav', sans-serif;
+	font-size: 3em;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-family: 'Ek Mukta', sans-serif;
+	font-size: 2em;
+}	
+
+h4 {
+	font-family: 'Ek Mukta', sans-serif;
+	font-size: 1.7em;
+}	
+
+h5 {
+	font-family: 'Ek Mukta', sans-serif;
+	font-size: 2.5em;
+}	
+
+hr {
+	width: 50%;
+}
+
+.mobile_toggle {
+	display: none;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.7em;
+	vertical-align: middle;
+	z-index: 999;
+}
+
+.line {
+	width: 20px;
+	height: 3px;
+	background: #FFF;
+	margin: 2px 0;
+}
+
+.container {
+  width: 100%;
+  margin-top: 1.5%;
+}
+
+.clearfix:after{
+	height: 0;
+	font-size: 0;
+	visibility: hidden;
+	display: block;
+	content: " ";
+	clear: both;
+}
+
+.navlinks {
+	text-align: center;	
+	list-style-type: none;
+	color: #333;
+	font-weight: bolder;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin: 4.3% 1.8%;
+	font-size: 1.2em;
+
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	-ms-transition: 0.2s;
+	-o-transition: 02s;
+	transition: 0.2s; 
+}
+.navlinks:hover {
+	
+}
+.nodesktop {
+	display: none;
+}
+
+.menu {
+	width: 40%;
+	margin: auto;
+}
+
+.menu div {
+	padding: 10px;
+}
+
+.fa-circle {
+	display: inline-block;
+	padding-top: 13px;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.menuhead {
+	width: 30%;
+}
+
+.menuhead h2 {
+	width: 20%;
+	margin: auto;
+}
+
+.colorfoot {
+	background-color: #a7b3bf;
+}
+
+.wood {
+	background: url(../images/woodlong.jpg);
+	background-size: cover;	
+	background-repeat: no-repeat;
+}
+
+.instafeed {
+	width: 35%;
+	margin: auto;
+}
+
+.instafeed a {
+	margin: auto;
+}
+
+.instafeed a img {
+	width: 25%;
+	margin: auto;
+}
+
+.footinfo {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.coll {
+	display: inline-block;
+	width: 33%;
+	vertical-align: middle;
+}
+
+#toggle {
+	display: none;
+}
+
+#foodpics {
+	width: 60%;
+	margin: auto;
+	background-color: #a7b3bf;
+}
+
+#foodpics img {
+	width: 24%;
+	display: inline-block;
+}
+
+/*.menu {
+	background: url(../images/woodbkg.jpg);
+	background-size: cover;
+}*/
+
+#foodpics h1 {
+	text-transform: uppercase;
+	padding: 4% 10% 0;
+	font-size: 7em;
+	float: right;
+}
+
+#beerpics {
+	width: 60%;
+	margin: 15px auto;
+	background-color: #a7b3bf;
+}
+
+#beerpics h1 {
+	text-transform: uppercase;
+	padding: 4% 10% 0;
+	font-size: 7em;
+	float: left;
+}
+
+#beerpics img {
+	float: right;
+	width: 24%;
+	display: inline-block;
+}
+
+#outerbox {
+	border: 5px solid black;
+	width: 40%;
+	margin: auto;
+}
+
+#innerbox {
+	border: 1px solid black;
+	margin: 10px;
+	text-align: center;
+}
+
+#logo {
+	width: 35%;
+	margin: auto;
+}
+
+#logo img {
+	width: 100%;
+}
+
+#drinkmenu {
+	background: url(../images/drink1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 65%;
+	margin: 5px auto 20px;
+	height: 850px;
+}
+
+#drinkmenu div {
+	color: white;
+    padding: 3.5%;
+/*    background-color: rgba(167, 179, 191, 0.66);*/
+}
+
+#center {
+	margin: auto;
+	text-align: center;
+}
+
+@media only screen and (max-width: 900px) {
+	label {
+		display: block;
+		float:right;
+		padding: 15px;
+	}
+	nav{
+		display: none;
+		position: static;
+		clear:both;
+		background-image: none;
+	}
+	.container {
+		background-image: none;
+    	margin-top: 23%;
+   	 	background-color: #fff;
+	}
+	.nodesktop {
+		display: block;
+	}
+	#toggle:checked + .container nav {	
+		display: block;
+	}
+	.mobile_toggle {
+		display: block;
+	}
+	#nomobile {
+		display: none;
+	}
+}
