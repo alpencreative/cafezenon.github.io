@@ -108,6 +108,29 @@ hr {
 	clear: both;
 }
 
+.local	{
+	text-align: center;
+	margin-top: 2.5%;
+	padding: 3%;
+	background-color: #a7b3bf;
+}
+
+.locallogo {
+	width: 40%;
+	display: inline-block;
+	float: right;
+	padding: 5% 5% 1%;
+}
+
+.locallogo img {
+	width: 40%;
+}
+
+.localmap {
+	text-align: right;
+	padding: 5% 5% 1%;
+}
+
 .navlinks {
 	text-align: center;	
 	list-style-type: none;
@@ -154,7 +177,13 @@ hr {
 }
 
 .menuhead {
-	width: 30%;
+	width: 60%;
+	margin: auto;
+}
+
+.menuhead img {
+	width: 100%;
+	display: inline-block;
 }
 
 .menuhead h2 {
