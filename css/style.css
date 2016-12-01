@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Yantramanav:500');
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:200');
 @import url('https://fonts.googleapis.com/css?family=Ek+Mukta:200');
 
 * {
@@ -15,8 +15,9 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 999;
+  z-index: 998;
   background-color: white;
+  box-shadow: 0 .8px 5px #888888;
 }
 
 label {
@@ -29,10 +30,11 @@ label {
 
 nav {
 	text-align: center;
+	padding: 20px;
 }
 
 section {
-	margin-top: 3.5%;
+	margin-top: 60px;
 }
 
 footer {
@@ -50,7 +52,8 @@ a {
 h1 {
 	text-align: center;
 	font-family: 'Yantramanav', sans-serif;
-	font-size: 5em;
+	font-size: 4em;
+	padding: 30px;
 }
 
 h2 {
@@ -79,6 +82,28 @@ hr {
 	width: 50%;
 }
 
+#headerlogo
+{
+	display: block;
+	margin: 0 20px;
+	position: fixed;
+}
+
+.hr_topspace
+{
+	margin-top: 40px;
+}
+
+.hr_bottomspace
+{
+	margin-bottom: 40px;
+}
+
+.phospacer
+{
+	margin: 10px;
+}
+
 .mobile_toggle {
 	display: none;
 	font-family: 'Lato', sans-serif;
@@ -90,13 +115,12 @@ hr {
 .line {
 	width: 20px;
 	height: 3px;
-	background: #FFF;
+	background: #666;
 	margin: 2px 0;
 }
 
 .container {
   width: 100%;
-  margin-top: 1.5%;
 }
 
 .clearfix:after{
@@ -110,25 +134,9 @@ hr {
 
 .local	{
 	text-align: center;
-	margin-top: 2.5%;
+	margin: 2.5% 0;
 	padding: 3%;
-	background-color: #a7b3bf;
-}
-
-.locallogo {
-	width: 40%;
-	display: inline-block;
-	float: right;
-	padding: 5% 5% 1%;
-}
-
-.locallogo img {
-	width: 40%;
-}
-
-.localmap {
-	text-align: right;
-	padding: 5% 5% 1%;
+	/*background-color: #a7b3bf;*/
 }
 
 .navlinks {
@@ -148,7 +156,7 @@ hr {
 	transition: 0.2s; 
 }
 .navlinks:hover {
-	
+	color: #999;
 }
 .nodesktop {
 	display: none;
@@ -191,6 +199,18 @@ hr {
 	margin: auto;
 }
 
+.outerbox {
+	border: 5px solid black;
+	width: 30%;
+	margin: 40px auto;
+}
+
+.innerbox {
+	border: 1px solid black;
+	margin: 10px;
+	text-align: center;
+}
+
 .colorfoot {
 	background-color: #a7b3bf;
 }
@@ -199,6 +219,11 @@ hr {
 	background: url(../images/woodlong.jpg);
 	background-size: cover;	
 	background-repeat: no-repeat;
+}
+
+.telelink {
+	text-decoration: none;
+	color: #555;
 }
 
 .instafeed {
@@ -237,8 +262,9 @@ hr {
 }
 
 #foodpics img {
-	width: 24%;
+	width: 22%;
 	display: inline-block;
+	padding: 1.2%;
 }
 
 /*.menu {
@@ -249,7 +275,7 @@ hr {
 #foodpics h1 {
 	text-transform: uppercase;
 	padding: 4% 10% 0;
-	font-size: 7em;
+	font-size: 5em;
 	float: right;
 }
 
@@ -262,7 +288,7 @@ hr {
 #beerpics h1 {
 	text-transform: uppercase;
 	padding: 4% 10% 0;
-	font-size: 7em;
+	font-size: 5em;
 	float: left;
 }
 
@@ -270,23 +296,30 @@ hr {
 	float: right;
 	width: 24%;
 	display: inline-block;
+	padding: 1.2%
 }
 
-#outerbox {
-	border: 5px solid black;
-	width: 40%;
-	margin: auto;
+#locallogo {
+	width: 49%;
+	display: inline-block;
 }
 
-#innerbox {
-	border: 1px solid black;
-	margin: 10px;
-	text-align: center;
+#locallogo img {
+	width: 400px;
+	margin: 25px 0;
 }
 
+#localmap {
+	width: 49%;
+	display: inline-block;
+	text-align: right;
+	/*padding: 5% 5% 1%;*/
+	/*float: right;*/
+}
 #logo {
 	width: 35%;
 	margin: auto;
+	padding: 40px;
 }
 
 #logo img {
@@ -297,7 +330,7 @@ hr {
 	background: url(../images/drink1.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
-	width: 65%;
+	width: 60%;
 	margin: 5px auto 20px;
 	height: 850px;
 }
@@ -305,7 +338,7 @@ hr {
 #drinkmenu div {
 	color: white;
     padding: 3.5%;
-/*    background-color: rgba(167, 179, 191, 0.66);*/
+	/*background-color: rgba(167, 179, 191, 0.66);*/
 }
 
 #center {
@@ -313,7 +346,41 @@ hr {
 	text-align: center;
 }
 
+@media only screen and (max-width: 1350px) {
+	.menu {
+		width: 60%;
+	}
+	.menuhead {
+		width: 60%;
+	}
+	.outerbox {
+		width: 40%;
+	}
+	#drinkmenu {
+		width: 80%;
+	}
+	#localmap iframe {
+		width: 450px;
+	}
+	#locallogo img {
+		width: 300px;
+		margin: 75px 0;
+	}
+	#foodpics {
+		width: 80%;
+	}
+	#foodpics h1 {
+		padding: 4% 4% 0;
+	}
+	#beerpics {
+		width: 80%;
+	}
+}
+
 @media only screen and (max-width: 900px) {
+	body {
+		font-size: 13px;
+	}
 	label {
 		display: block;
 		float:right;
@@ -325,13 +392,71 @@ hr {
 		clear:both;
 		background-image: none;
 	}
+	section {
+		margin-top: 47px;
+	}
+	hr {
+		width: 85%;
+	}
+	.navlinks {
+		display: block;	
+	}
 	.container {
 		background-image: none;
-    	margin-top: 23%;
+    	/*margin-top: 23%;*/
    	 	background-color: #fff;
 	}
 	.nodesktop {
 		display: block;
+	}
+	.wood {
+		background: url(../images/woodmobile.jpg);
+		background-size: cover;	
+		background-repeat: no-repeat;
+	}
+	.menu {
+		width: 80%;
+	}
+	.menuhead {
+		width: 80%;
+	}
+	.local h5 {
+		width: 80%;
+		margin: 20px auto;
+	}
+	.outerbox {
+		width: 60%;
+	}
+	.coll {
+		display: block;
+		width: 100%;
+	}
+	.instafeed iframe {
+		height: auto;
+	}
+	.footinfo {
+		margin: 30px;
+	}
+	.right {
+		float: none;
+	}
+	#foodpics {
+		width: 90%;
+	}
+	#beerpics {
+		width: 90%;
+	}
+	#drinkmenu {
+		width: 90%
+	}
+	#foodpics h1 {
+		font-size: 4em;
+	}
+	#beerpics h1 {
+		font-size: 4em;
+	}
+	#logo {
+		padding: 80px;
 	}
 	#toggle:checked + .container nav {	
 		display: block;
@@ -339,7 +464,60 @@ hr {
 	.mobile_toggle {
 		display: block;
 	}
+	#headerlogo	{
+		position: relative;
+		height: 40px;
+		margin: 3px 20px;
+	}
+	#locallogo {
+		display: block;
+		width: 100%;
+		margin: 0 auto;
+	}
+	#localmap {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+	#localmap iframe {
+		width: 80%;
+	}
+	#map {
+		text-align: center;
+	}
 	#nomobile {
 		display: none;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	#foodpics h1 {
+		font-size:3em;
+	}
+	#beerpics h1 {
+		font-size: 3em;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	body {
+		font-size: 12px;
+	}
+	.menuhead {
+		width: 90%;
+	}
+	.outerbox {
+		width: 90%;
+	}
+	#localmap iframe {
+		width: 100%;
+		height: 250px;
+	}
+	#locallogo img {
+		width: 200px;
+	}
+	#logo {
+		padding: 100px 0;
+		width: 65%;
 	}
 }
