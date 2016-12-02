@@ -38,15 +38,16 @@ section {
 }
 
 footer {
-
+	box-shadow: 0 -.8px 5px #888888;
 }
 
 span {
 	float: right;
 }
 
-a {
-
+a {	
+	text-decoration: none;
+	color: black;
 }
 
 h1 {
@@ -76,10 +77,21 @@ h4 {
 h5 {
 	font-family: 'Ek Mukta', sans-serif;
 	font-size: 2.5em;
+}
+
+h6 {
+	font-family: 'Ek Mukta', sans-serif;
+	font-size: 2em;
 }	
 
 hr {
 	width: 50%;
+}
+
+iframe {
+	width: 95%;
+	height: 540px;
+/*	border-radius: 270px 270px 270px 270px;*/
 }
 
 #headerlogo
@@ -184,6 +196,10 @@ hr {
 	float: right;
 }
 
+.socmed {
+	width: 30%;
+}
+
 .menuhead {
 	width: 60%;
 	margin: auto;
@@ -227,8 +243,9 @@ hr {
 }
 
 .instafeed {
-	width: 35%;
-	margin: auto;
+/*	width: 15%;
+    margin: 2%;
+    float: left;*/
 }
 
 .instafeed a {
@@ -237,7 +254,7 @@ hr {
 
 .instafeed a img {
 	width: 25%;
-	margin: auto;
+	padding: 0 1%;
 }
 
 .footinfo {
@@ -246,9 +263,18 @@ hr {
 }
 
 .coll {
-	display: inline-block;
-	width: 33%;
+	display: block;
+	width: 17%;
 	vertical-align: middle;
+	margin: 1%;
+	float: left;
+}
+
+.collr {
+	display: block;
+	float: right;
+	width: 25%;
+	margin: 1%;
 }
 
 #toggle {
@@ -300,21 +326,43 @@ hr {
 }
 
 #locallogo {
-	width: 49%;
-	display: inline-block;
+    width: 46%;
+    display: inline-block;
+    margin: 2% 0;
+    text-align: left;
+    border-left: thin solid #000000;
+}
+
+#topspace {
+	padding: 5%;
+}
+
+#bwgc {
+	background: url(../images/bwgc.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 800px;
 }
 
 #locallogo img {
-	width: 400px;
-	margin: 25px 0;
+	width: 70%;
+	margin: 5% 0 8% 5%;
+}
+
+#whiteop {
+	background-color: rgba(255, 255, 255, .5);
+	width: 80%;
+	margin: -77px auto;
 }
 
 #localmap {
-	width: 49%;
-	display: inline-block;
-	text-align: right;
-	/*padding: 5% 5% 1%;*/
-	/*float: right;*/
+    width: 48%;
+    display: inline-block;
+    text-align: right;
+    vertical-align: top;
+    padding-top: 4.5%;
+    padding-right: 2%;
+    padding-bottom: 4%;
 }
 #logo {
 	width: 35%;
@@ -338,7 +386,6 @@ hr {
 #drinkmenu div {
 	color: white;
     padding: 3.5%;
-	/*background-color: rgba(167, 179, 191, 0.66);*/
 }
 
 #center {
@@ -346,7 +393,70 @@ hr {
 	text-align: center;
 }
 
+@media only screen and (max-width: 2350px) {
+	iframe {
+		height: 500px;
+	}
+}
+
+@media only screen and (max-width: 2350px) {
+	iframe {
+		height: 450px;
+	}
+}
+
+@media only screen and (max-width: 2200px) {
+	#whiteop {
+		margin: -20px auto;
+	}
+}
+
+@media only screen and (max-width: 2000px) {
+	.footinfo {
+		font-size: .8em;
+	}
+	iframe {
+		height: 400px;
+	}	
+}
+
+@media only screen and (max-width: 1900px) {
+	#whiteop{
+		margin: 20px auto;
+	}
+}
+
+@media only screen and (max-width: 1750px) {
+	#smltxt {
+		font-size: .8em;
+	}
+}
+
+@media only screen and (max-width: 1650px) {
+	iframe {
+		height: 350px;
+	}
+}
+
+@media only screen and (max-width: 1550px) {
+	.menu {
+		width: 55%;
+	}
+	.outerbox {
+		width: 35%;
+	}
+	#smltxt {
+		font-size: .6em;
+	}
+	#whiteop {
+		width: 90%;
+	}
+}
+
 @media only screen and (max-width: 1350px) {
+	iframe {
+		height: 300px;
+	}
 	.menu {
 		width: 60%;
 	}
@@ -356,15 +466,11 @@ hr {
 	.outerbox {
 		width: 40%;
 	}
+	.footinfo {
+		font-size: .6em;
+	}	
 	#drinkmenu {
 		width: 80%;
-	}
-	#localmap iframe {
-		width: 450px;
-	}
-	#locallogo img {
-		width: 300px;
-		margin: 75px 0;
 	}
 	#foodpics {
 		width: 80%;
@@ -374,6 +480,33 @@ hr {
 	}
 	#beerpics {
 		width: 80%;
+	}
+	#bwgc {
+		height: 600px;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.local h5 {
+		font-size: 1.8em;
+	}
+	.local h6 {
+		font-size: 1.5em;
+	}
+	.outerbox {
+		width: 60%;
+	}
+	#smltxt {
+		font-size: .5em;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.hr_bottomspace {
+		margin-bottom: 10px;
+	}
+	#bwgc {
+		height: 500px;
 	}
 }
 
@@ -406,6 +539,9 @@ hr {
     	/*margin-top: 23%;*/
    	 	background-color: #fff;
 	}
+	.collr {
+		margin: 3.5%;
+	}
 	.nodesktop {
 		display: block;
 	}
@@ -421,21 +557,18 @@ hr {
 		width: 80%;
 	}
 	.local h5 {
-		width: 80%;
+		width: 100%;
 		margin: 20px auto;
 	}
 	.outerbox {
 		width: 60%;
 	}
 	.coll {
-		display: block;
-		width: 100%;
+		margin: 2%;
+		width: 35%;
 	}
 	.instafeed iframe {
 		height: auto;
-	}
-	.footinfo {
-		margin: 30px;
 	}
 	.right {
 		float: none;
@@ -470,9 +603,12 @@ hr {
 		margin: 3px 20px;
 	}
 	#locallogo {
-		display: block;
-		width: 100%;
-		margin: 0 auto;
+	    display: block;
+	    width: 70%;
+	    margin: 0 auto;
+	    border-left: none;
+	    border-top: thin solid #000000;
+	    text-align: center;
 	}
 	#localmap {
 		display: block;
@@ -488,6 +624,21 @@ hr {
 	#nomobile {
 		display: none;
 	}
+	#bwgc {
+		height: 850px;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.menu {
+		width: 90%;
+	}
+	.menu h4 {
+		width: 85%;
+	}
+	#bwgc {
+		height: 750px;
+	}
 }
 
 @media only screen and (max-width: 600px) {
@@ -496,6 +647,25 @@ hr {
 	}
 	#beerpics h1 {
 		font-size: 3em;
+	}
+	#bwgc {
+		height: 700px;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.collr {
+		width: 50%;
+	}
+	.instafeed a img {
+		width: 30%;
+	}
+	.coll {
+		margin: 3%;
+		width: 37%;
+	}
+	#bwgc {
+		height: 650px;
 	}
 }
 
@@ -509,15 +679,49 @@ hr {
 	.outerbox {
 		width: 90%;
 	}
-	#localmap iframe {
-		width: 100%;
-		height: 250px;
-	}
-	#locallogo img {
-		width: 200px;
-	}
 	#logo {
 		padding: 100px 0;
 		width: 65%;
+	}
+	#foodpics {
+		width: 100%;
+	}
+	#middle {
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.coll {
+		width: 100%;
+		margin: auto;
+	}
+	.instafeed a img {
+		width: 13%;
+	}
+	.collr {
+		width: 100%;
+		margin: 3.5% 0;
+	}
+	.phospacer {
+		font-size: 2.5em;
+	}
+	#foodpics  img {
+		width: 20%;
+	}
+	#contactem h4 {
+		font-size: 1.4em;
+	}
+	#bwgc {
+		height: 600px;
+	}
+}
+
+@media only screen and (max-width: 300px) {
+	#smltxt {
+		font-size: .4em;
+	}
+	#smltxt h1	{
+		padding: 10px;
 	}
 }
